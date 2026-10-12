@@ -166,7 +166,7 @@
       { q: 'Che tono di voce dovremmo usare?', a: 'Uno che ti somigli davvero.' },
       { q: 'Cosa pubblichiamo questo mese?', a: 'Ecco il piano editoriale.' }
     ];
-    const chatter = ['…', '?', '!', '♥', 'ok!', 'ah!', 'sì!', '✺'];
+    const chatter = ['…', '?', '!', '♥', 'ok!', 'ah!', 'sì!', '✦'];
     const mq = matchMedia('(max-width:700px)');
     const MOBILE = [4, 5];
     const shown = i => !mq.matches || MOBILE.includes(i);

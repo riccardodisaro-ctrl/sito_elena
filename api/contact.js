@@ -29,7 +29,7 @@ export default async function handler(req, res) {
 
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:32px;background:#F4F2F4;border-radius:16px;color:#1D211F">
-      <h2 style="margin:0 0 20px">Nuova richiesta dal sito ✺</h2>
+      <h2 style="margin:0 0 20px">Nuova richiesta dal sito ✦</h2>
       <table style="width:100%;border-collapse:collapse">
         ${riga('Nome', esc(nome))}
         ${riga('Email', `<a href="mailto:${esc(email)}" style="color:#CB5521">${esc(email)}</a>`)}
