@@ -15,6 +15,7 @@ export default async function handler(req, res) {
   const email = clean(body.email, 160);
   const azienda = clean(body.azienda, 160);
   const telefono = clean(body.telefono, 40);
+  const messaggio = clean(body.messaggio, 5000);
 
   // campo trappola per i bot: se è compilato, fingiamo che sia andato tutto bene
   if (clean(body.sito)) return res.status(200).json({ ok: true });
@@ -35,6 +36,8 @@ export default async function handler(req, res) {
         ${riga('Nome azienda', esc(azienda) || '<span style="color:#999">Non indicato</span>')}
         ${riga('Telefono', telefono ? `<a href="tel:${esc(telefono)}" style="color:#CB5521">${esc(telefono)}</a>` : '<span style="color:#999">Non indicato</span>')}
       </table>
+      <p style="margin:24px 0 8px;color:#666">Messaggio</p>
+      <div style="white-space:pre-wrap;line-height:1.5">${esc(messaggio) || '<span style="color:#999">Nessun messaggio</span>'}</div>
       <p style="margin:24px 0 0;font-size:13px;color:#666">Rispondi direttamente a questa email per scrivere a ${esc(nome)}.</p>
     </div>`;
 
