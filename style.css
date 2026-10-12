@@ -397,8 +397,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 
 /* ============ CONTACT extras ============ */
 .contact__text{display:grid;gap:1rem}
-.contact__tel{display:block;margin-top:1rem;font-family:var(--f-mono);font-size:1.05rem;text-decoration:none}
-.contact__tel:hover{color:var(--pink)}
 .field textarea::placeholder{color:var(--muted);opacity:.8}
 
 /* ============ SCENA ANIMATA ============ */
