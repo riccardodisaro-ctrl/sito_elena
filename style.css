@@ -321,6 +321,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 .form__btn{justify-self:start;border-color:var(--ink);background:var(--pink);color:var(--white)}
 .form__btn:hover{background:var(--ink);color:var(--paper)}
 .form__ok{font-weight:600;color:var(--magenta)}
+.form__privacy{font-size:.8rem;color:var(--muted)}
+.form__privacy a:hover{color:var(--magenta)}
 
 .foot{
   display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;

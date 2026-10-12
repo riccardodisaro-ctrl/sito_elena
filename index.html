@@ -70,9 +70,8 @@
     ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Fira+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="preload" href="/fonts/bricolage-grotesque-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js')</script>
   <script src="main.js" defer></script>
@@ -595,6 +594,7 @@
         <label class="field"><span>Il tuo messaggio</span><textarea name="messaggio" rows="4"></textarea></label>
         <label class="hp" aria-hidden="true">Lascia vuoto<input name="sito" tabindex="-1" autocomplete="off"></label>
         <button class="pill pill--pink form__btn" data-wiggle>Invia il messaggio <span class="pill__arrow" aria-hidden="true">↗</span></button>
+        <p class="form__privacy">Inviando il messaggio dichiari di aver letto l’<a href="/privacy">informativa privacy</a>.</p>
         <p class="form__ok" data-ok hidden role="status">Da un messaggio può nascere un bel progetto. Il tuo è arrivato, ti contatterò presto per parlarne.</p>
         <p class="form__err" data-err hidden role="alert">Qualcosa non ha funzionato. Riprova o scrivimi a <a href="mailto:efainarea@gmail.com">efainarea@gmail.com</a>.</p>
       </form>
@@ -602,7 +602,7 @@
 
     <footer class="foot wrap">
       <span>© 2026 Elena Fainarea · Digital Brand Strategist &amp; Copywriter</span>
-      <span class="foot__social"><a href="mailto:efainarea@gmail.com">efainarea@gmail.com</a></span>
+      <span class="foot__social"><a href="mailto:efainarea@gmail.com">efainarea@gmail.com</a><a href="/privacy">Privacy</a></span>
       <a href="#top">Torna su ↑</a>
     </footer>
   </section>
