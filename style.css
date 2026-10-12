@@ -540,3 +540,20 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .form__err{font-weight:600;color:#B3261E}
 .form__btn[disabled]{opacity:.6;cursor:wait}
+
+/* ============ WHATSAPP (solo mobile) ============ */
+.wa{display:none}
+@media (max-width:700px){
+  .wa{
+    display:grid;place-items:center;position:fixed;z-index:45;
+    right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));
+    width:58px;height:58px;border-radius:50%;background:#25D366;border:2px solid var(--ink);
+    box-shadow:3px 3px 0 var(--ink);transition:transform .4s var(--elastic), box-shadow .3s;
+    animation:wa-in .8s var(--elastic) 1.2s both;
+  }
+  .wa svg{width:30px;height:30px;fill:#fff}
+  .wa:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+  .nav--open ~ .wa,body:has(.nav--open) .wa{opacity:0;pointer-events:none}
+  .foot{padding-bottom:calc(5.5rem + env(safe-area-inset-bottom))}
+}
+@keyframes wa-in{from{transform:scale(0) rotate(-30deg)}to{transform:none}}
